@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sugerencias de regalo · Nathali Yasmil</title>
+<meta name="theme-color" content="#5A0A16">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://invitavale.com/XV-Nathali-Yasmil/regalos.html">
+<meta property="og:title" content="Sugerencias de regalo · XV de Nathali Yasmil">
+<meta property="og:description" content="Ideas de regalo organizadas por categoría para los XV años de Nathali Yasmil.">
+<meta property="og:image" content="https://invitavale.com/XV-Nathali-Yasmil/vista-previa.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Cinzel:wght@400;500&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+/*
+VOICE: tierna y elegante, como una lista escrita a mano para la temporada.
+IDEA: el carnet de una debutante de la Regencia: cada categoría es una tarjeta de pergamino.
+PICTURE: las ilustraciones que mandó la familia, en marco dorado, que se abren al tocar.
+COLOUR and TYPE: terciopelo vino, pergamino y oro; Pinyon Script, Cinzel y Cormorant.
+LAYOUT: una columna de teléfono, menú de categorías fijo arriba, una tarjeta por categoría.
+*/
+:root{--vino:#5A0A16;--rojo:#7A1426;--carmesi:#9E1B2E;--tinta:#3E0A14;--suave:#6B3A3F;--oro:#D4AF6A;--oro-claro:#F6E3B4;--oro-osc:#9C7A3C;
+  --script:'Pinyon Script',cursive;--serif:'Cormorant Garamond',Georgia,serif;--caps:'Cinzel',Georgia,serif}
+*{box-sizing:border-box;margin:0;padding:0;min-width:0}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{font-family:var(--serif);color:var(--tinta);background:#2E0409;-webkit-font-smoothing:antialiased;overflow-x:clip}
+img{display:block;max-width:100%}
+button{font:inherit;border:0;background:none;cursor:pointer;color:inherit}
+.hoja{max-width:480px;margin:0 auto;background:#4E0812 url('fondo-terciopelo.webp') center top/600px auto;min-height:100vh;box-shadow:0 0 60px rgba(0,0,0,.5)}
+
+/* encabezado */
+.cab{position:relative;text-align:center;color:var(--oro-claro);padding:28px 22px 26px}
+.volver{position:absolute;left:14px;top:14px;display:inline-flex;align-items:center;gap:6px;font-family:var(--caps);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--oro-claro);text-decoration:none;padding:10px 8px;min-height:44px}
+.kicker{font-family:var(--caps);font-size:11px;letter-spacing:.4em;text-transform:uppercase}
+.cab .kicker{margin-top:30px}
+.cab h1{font-family:var(--script);font-weight:400;font-size:clamp(42px,12vw,54px);line-height:1.05;margin-top:6px;
+  background:linear-gradient(180deg,#FFF4D6 10%,#EBCB86 50%,#C9984A 85%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 2px 6px rgba(0,0,0,.45))}
+.adorno{width:170px;height:22px;margin:4px auto 0;background:url('elementos/adorno.svg') center/contain no-repeat}
+.cab .para{font-family:var(--script);font-size:30px;color:#F7E6DA;margin-top:6px}
+.nota{margin:18px auto 0;max-width:340px;font-style:italic;font-size:17px;line-height:1.45;color:#F7E6DA}
+
+/* menú de categorías */
+.menu{position:sticky;top:0;z-index:5;display:flex;gap:8px;overflow-x:auto;padding:10px 14px;scroll-snap-type:x proximity;
+  background:rgba(58,5,12,.92);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border-top:1px solid rgba(212,175,106,.5);border-bottom:1px solid rgba(212,175,106,.5);scrollbar-width:none}
+.menu::-webkit-scrollbar{display:none}
+.menu a{flex:none;scroll-snap-align:start;font-family:var(--caps);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:var(--oro-claro);
+  padding:10px 14px;border:1px solid rgba(212,175,106,.6);border-radius:999px;white-space:nowrap;min-height:40px;display:flex;align-items:center;transition:background .3s,color .3s}
+.menu a.on{background:linear-gradient(180deg,#F6E3B4,#D4AF6A);color:var(--vino)}
+
+/* tarjetas */
+.lista{padding:22px 14px 30px}
+.cat{position:relative;margin-bottom:22px;border:22px solid transparent;border-image:url('elementos/marco.svg') 40 fill / 22px stretch;
+  filter:drop-shadow(0 14px 22px rgba(0,0,0,.4));opacity:0;transform:translateY(40px);transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1)}
+.cat.ver{opacity:1;transform:none}
+.cat-in{padding:4px 4px 6px}
+.num{display:block;text-align:center;font-family:var(--caps);font-size:10px;letter-spacing:.32em;color:var(--oro-osc)}
+.cat h2{font-family:var(--script);font-weight:400;font-size:40px;line-height:1.05;text-align:center;color:var(--tinta);margin-top:2px;text-wrap:balance}
+.cat .desc{text-align:center;font-style:italic;font-size:16px;color:var(--suave);margin:4px 6px 0;line-height:1.4}
+.fotos{display:grid;grid-template-columns:minmax(0,1fr);gap:10px;margin:14px 0 6px}
+.fotos.dos{grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);align-items:start}
+.foto{position:relative;padding:5px;background:linear-gradient(180deg,#FFF0C4,#D4AF6A 45%,#9C7A3C 80%,#E9CC88);border-radius:3px;box-shadow:0 8px 16px rgba(62,10,20,.25)}
+.foto img{width:100%;max-height:420px;object-fit:cover;object-position:50% 0;border:3px solid #FFFCF6;border-radius:2px}
+.foto .ver-mas{position:absolute;right:12px;bottom:12px;font-family:var(--caps);font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--oro-claro);background:rgba(90,10,22,.85);padding:6px 10px;border-radius:999px}
+.grupo{margin-top:14px}
+.grupo h3{display:flex;align-items:center;gap:10px;font-family:var(--caps);font-weight:500;font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--carmesi)}
+.grupo h3::before,.grupo h3::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,transparent,#C9A25B,transparent)}
+.chips{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;margin-top:9px;list-style:none}
+.chips li{font-size:15.5px;line-height:1.2;padding:6px 12px;border-radius:999px;background:#FFFCF5;border:1px solid rgba(201,162,91,.75);color:var(--tinta)}
+.chips li b{font-weight:600;color:var(--carmesi)}
+.tip{margin-top:14px;text-align:center;font-style:italic;font-size:14.5px;color:var(--oro-osc);border-top:1px solid rgba(201,162,91,.5);padding-top:10px}
+
+.pie{text-align:center;color:#F7E6DA;padding:6px 24px 40px}
+.pie p{font-style:italic;font-size:17px;line-height:1.45}
+.pie .firma{font-family:var(--script);font-size:38px;color:var(--oro-claro);margin-top:6px}
+.btn{display:inline-block;margin-top:18px;font-family:var(--caps);font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;text-decoration:none;color:var(--vino);
+  padding:14px 26px;border-radius:999px;background:linear-gradient(180deg,#FFF0C4,#E2BE78 40%,#B88A3E 75%,#E9CC88);box-shadow:0 6px 18px rgba(0,0,0,.35)}
+
+/* foto ampliada */
+.zoom{position:fixed;inset:0;z-index:20;display:none;align-items:center;justify-content:center;padding:16px;background:rgba(30,3,7,.92)}
+.zoom.abierto{display:flex}
+.zoom img{max-height:92vh;width:auto;border:4px solid var(--oro);border-radius:4px}
+.zoom button{position:absolute;top:10px;right:12px;width:44px;height:44px;font-size:32px;color:var(--oro-claro)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.cat{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+<div class="hoja">
+  <header class="cab">
+    <a class="volver" href="index.html">‹ Volver</a>
+    <p class="kicker">Mesa de regalos</p>
+    <h1>Sugerencias de regalo</h1>
+    <div class="adorno" aria-hidden="true"></div>
+    <p class="para">para Nathali Yasmil</p>
+    <p class="nota">Tu presencia es mi mejor regalo. Si deseas tener un detalle conmigo, aquí te dejo algunas ideas de las cosas que me encantan.</p>
+  </header>
+
+  <nav class="menu" id="menu" aria-label="Categorías"></nav>
+  <main class="lista" id="lista"></main>
+
+  <footer class="pie">
+    <p>Cualquier detalle hecho con cariño será recibido con el corazón.</p>
+    <p class="firma">Gracias</p>
+    <a class="btn" href="index.html">Volver a la invitación</a>
+  </footer>
+</div>
+
+<div class="zoom" id="zoom" role="dialog" aria-modal="true" aria-label="Imagen ampliada">
+  <button type="button" id="zoomCerrar" aria-label="Cerrar">&times;</button>
+  <img id="zoomImg" src="" alt="">
+</div>
+
+<script>
+{
+const CATS = [
+  { id:'fragancias', menu:'Fragancias', titulo:'Fragancias y cuerpo', desc:'Sets de Bath & Body Works: crema, bruma y gel de baño del mismo aroma.',
+    fotos:['regalos/bath-body.webp'],
+    grupos:[
+      ['Aromas favoritos',['Cactus Blossom','Dahlia','Champagne Toast','In the Stars','Pure Wonder','Snowflakes & Cashmere','Winterberry Wonder','Fairytale','Strawberry Pound Cake','Whipped Coconut Milkshake','Rainbow Waves','Guava-tini']],
+      ['Productos',['Crema corporal','Bruma (fine fragrance mist)','Gel de baño','Loción corporal','Set completo de un aroma']]
+    ], tip:'Un set del mismo aroma (crema, bruma y gel) es un regalo perfecto.' },
+  { id:'piel', menu:'Cuidado de la piel', titulo:'Cuidado de la piel', desc:'Productos de skincare suaves y rosados para su rutina.',
+    fotos:['regalos/skincare.webp'],
+    grupos:[
+      ['Rostro',['Glow Recipe (sérum, tónico y bruma de sandía)','Bubble (Slam Dunk, Day Dream, Morning Rays)','Byoma (gel de ojos, sérum, gel-crema)','Laneige (mascarilla de noche)','Rhode','CeraVe limpiador espumoso','The Ordinary','Drunk Elephant crema','Brumas faciales','Mascarillas faciales']],
+      ['Labios',['Laneige Lip Sleeping Mask','Rhode lip tint','Gisou aceite de labios','Vaseline Lip Therapy']],
+      ['Cuerpo y aroma',['Sol de Janeiro (Bum Bum Cream, Cheirosa 62 y 68)','Tree Hut exfoliante (Vanilla, Pink Hibiscus)','Gisou aceite de miel para el cabello','Kosas']],
+      ['Accesorios',['Diadema de spa','Gua sha de cuarzo rosa','Vaso Stanley rosado','Espejo de bolsillo','Cepillo desenredante']]
+    ] },
+  { id:'maquillaje', menu:'Maquillaje', titulo:'Maquillaje y perfumes', desc:'Tonos rosados, nude y dorados.',
+    fotos:['regalos/maquillaje.webp','regalos/brochas.webp'],
+    grupos:[
+      ['Rostro y ojos',['Paleta de sombras en tonos rosados y nude','Rubor rosado','Polvo iluminador','Polvo compacto']],
+      ['Labios',['Labiales rosados y vino','Brillo labial (lip gloss)','Aceite de labios','Rare Beauty']],
+      ['Perfumes y velas',['Perfume floral (estilo Miss Dior)','Vela aromática']],
+      ['Brochas',['Set de brochas con brillantes de 28 piezas','Esponjas para maquillaje','Organizador o vaso para brochas','Toalla desmaquillante']]
+    ] },
+  { id:'cabello', menu:'Cabello', titulo:'Para su cabello', desc:'Herramientas y accesorios para peinarse y cuidar su cabello.',
+    fotos:['regalos/cabello.webp'],
+    grupos:[
+      ['Herramientas',['Dyson Airwrap o plancha Dyson','Plancha de cabello rosada','Cepillo secador','Rizador automático','Ondulador de tres barriles','Secadora profesional']],
+      ['Sin calor',['Rulos de satén (heatless curls)','Rodillos térmicos','Gorro de satén']],
+      ['Accesorios',['Pinzas grandes (claw clips)','Ganchos y pasadores bonitos','Scrunchies de seda','Lazos para el cabello','Cepillos Wet Brush y Tangle Teezer']]
+    ] },
+  { id:'plata', menu:'Joyería', titulo:'Joyería de plata', desc:'Todo en plata: delicado, con corazones, lazos y estrellas.',
+    fotos:['regalos/plata.webp'],
+    grupos:[
+      ['Aretes',['Argollas plateadas','Aretes de lazo','Aretes de corazón','Aretes con piedra (estilo diamante)']],
+      ['Collares',['Collar con dije de corazón','Collar de lazo','Collar infinito','Dije de flor']],
+      ['Pulseras y anillos',['Pulsera tenis','Pulsera tipo Pandora con charms','Pulseras de bolitas','Pulsera de corazones','Anillo de corazón','Anillos finos para combinar']],
+      ['Relojes',['Reloj plateado elegante']]
+    ], tip:'Prefiere joyería de plata.' },
+  { id:'ropa', menu:'Ropa', titulo:'Ropa y outfits', desc:'Su estilo: tops lindos, mezclilla, vestidos cortos y suéteres cómodos.',
+    fotos:['regalos/ropa.webp'],
+    grupos:[
+      ['Tops',['Crop tops','Tops de tirantes','Blusas de hombros descubiertos','Tops halter','Camisetas básicas']],
+      ['Abajo',['Shorts de mezclilla','Faldas cortas (de vuelos, plisadas, cargo)','Jeans anchos','Pantalones cargo','Pantalón de cuero negro']],
+      ['Vestidos y abrigo',['Vestidos cortos en rosa, blanco y azul cielo','Vestido floral','Suéteres tejidos','Cárdigan','Sudadera oversize']]
+    ], tip:'Para la talla, consulta con la familia.' },
+  { id:'calzado', menu:'Calzado', titulo:'Calzado', desc:'Tenis de moda, tacones y botas.',
+    fotos:['regalos/calzado.webp'],
+    grupos:[
+      ['Tenis',['Nike Dunk Low (panda, verde, gris, vino, azul)','Nike Air Force 1','Adidas Samba','Adidas Campus 00s','Adidas Gazelle','New Balance 530','Nike M2K Tekno','Vans Old Skool']],
+      ['Tacones',['Tacones negros de charol','Slingbacks','Tacones color vino','Tacones nude o crema','Tacones marrón']],
+      ['Botas',['Botas altas','Botas Chelsea de plataforma','Botines de tacón','Botas vaqueras']]
+    ], tip:'Para la talla, consulta con la familia.' }
+];
+
+const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const menu = document.getElementById('menu');
+const lista = document.getElementById('lista');
+
+menu.innerHTML = CATS.map(c => `<a href="#${c.id}">${esc(c.menu)}</a>`).join('');
+lista.innerHTML = CATS.map((c, i) => `
+  <section class="cat" id="${c.id}">
+    <div class="cat-in">
+      <span class="num">${i + 1} de ${CATS.length}</span>
+      <h2>${esc(c.titulo)}</h2>
+      <p class="desc">${esc(c.desc)}</p>
+      <div class="fotos${c.fotos.length > 1 ? ' dos' : ''}">
+        ${c.fotos.map(f => `<button class="foto" type="button" data-src="${f}" aria-label="Ampliar imagen de ${esc(c.titulo)}"><img src="${f}" alt="Ideas de ${esc(c.titulo)}" loading="lazy"><span class="ver-mas">Ampliar</span></button>`).join('')}
+      </div>
+      ${c.grupos.map(([t, items]) => `
+        <div class="grupo"><h3>${esc(t)}</h3>
+          <ul class="chips">${items.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
+        </div>`).join('')}
+      ${c.tip ? `<p class="tip">${esc(c.tip)}</p>` : ''}
+    </div>
+  </section>`).join('');
+
+/* aparición al bajar y menú activo */
+const enlaces = [...menu.querySelectorAll('a')];
+const io = new IntersectionObserver(es => es.forEach(e => {
+  if (e.isIntersecting) e.target.classList.add('ver');
+}), { threshold: 0.08 });
+const ioMenu = new IntersectionObserver(es => es.forEach(e => {
+  if (!e.isIntersecting) return;
+  enlaces.forEach(a => a.classList.toggle('on', a.getAttribute('href') === '#' + e.target.id));
+  const on = menu.querySelector('a.on');
+  if (on) menu.scrollTo({ left: on.offsetLeft - 14, behavior: 'smooth' });
+}), { rootMargin: '-45% 0px -50% 0px' });
+document.querySelectorAll('.cat').forEach(s => { io.observe(s); ioMenu.observe(s); });
+
+/* ampliar foto */
+const zoom = document.getElementById('zoom'), zImg = document.getElementById('zoomImg');
+lista.addEventListener('click', e => {
+  const b = e.target.closest('.foto'); if (!b) return;
+  zImg.src = b.dataset.src; zImg.alt = b.querySelector('img').alt; zoom.classList.add('abierto');
+});
+const cerrar = () => zoom.classList.remove('abierto');
+document.getElementById('zoomCerrar').addEventListener('click', cerrar);
+zoom.addEventListener('click', e => { if (e.target === zoom) cerrar(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') cerrar(); });
+}
+</script>
+</body>
+</html>

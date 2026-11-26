@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF2C8"/><stop offset=".35" stop-color="#D9B46A"/><stop offset=".65" stop-color="#A97E34"/><stop offset="1" stop-color="#EBCF8C"/>
+    </linearGradient>
+    <g id="esq">
+      <!-- adorno de esquina (arriba-izquierda) -->
+      <path d="M12 30C12 20 20 12 30 12" fill="none" stroke="url(#g)" stroke-width="1.2"/>
+      <path d="M15 38C11 33 13 27 18 28C22 29 21 34 17 33" fill="none" stroke="url(#g)" stroke-width="1.3" stroke-linecap="round"/>
+      <path d="M38 15C33 11 27 13 28 18C29 22 34 21 33 17" fill="none" stroke="url(#g)" stroke-width="1.3" stroke-linecap="round"/>
+      <path d="M1.5 1.5L8 3.5L5 5L3.5 8Z" fill="url(#g)"/>
+      <circle cx="9.5" cy="9.5" r="2.2" fill="url(#g)"/>
+      <path d="M17 17L21 15L23 17L21 21L17 23L15 21Z" fill="url(#g)"/>
+    </g>
+  </defs>
+  <!-- pergamino con esquinas recortadas -->
+  <path d="M4 20A16 16 0 0 0 20 4H100A16 16 0 0 0 116 20V100A16 16 0 0 0 100 116H20A16 16 0 0 0 4 100Z" fill="#F8EEDA"/>
+  <!-- filete exterior grueso -->
+  <path d="M4 20A16 16 0 0 0 20 4H100A16 16 0 0 0 116 20V100A16 16 0 0 0 100 116H20A16 16 0 0 0 4 100Z" fill="none" stroke="url(#g)" stroke-width="3"/>
+  <!-- filete interior fino -->
+  <path d="M10 25.2A22 22 0 0 0 25.2 10H94.8A22 22 0 0 0 110 25.2V94.8A22 22 0 0 0 94.8 110H25.2A22 22 0 0 0 10 94.8Z" fill="none" stroke="#B88A3E" stroke-width="1" opacity=".85"/>
+  <use xlink:href="#esq"/>
+  <use xlink:href="#esq" transform="matrix(-1 0 0 1 120 0)"/>
+  <use xlink:href="#esq" transform="matrix(1 0 0 -1 0 120)"/>
+  <use xlink:href="#esq" transform="matrix(-1 0 0 -1 120 120)"/>
+</svg>

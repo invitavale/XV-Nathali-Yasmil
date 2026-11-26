@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 100">
+  <defs>
+    <linearGradient id="o" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFF1C9"/><stop offset=".45" stop-color="#E2B866"/><stop offset="1" stop-color="#9C6E25"/>
+    </linearGradient>
+    <linearGradient id="w" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".95"/><stop offset="1" stop-color="#FBE9C4" stop-opacity=".55"/>
+    </linearGradient>
+  </defs>
+  <!-- alas -->
+  <g class="alas" stroke="#C9A25B" stroke-width="1.6" fill="url(#w)">
+    <path d="M56 44C44 18 20 8 12 20C4 32 22 46 52 50Z"/>
+    <path d="M64 44C76 18 100 8 108 20C116 32 98 46 68 50Z"/>
+    <path d="M54 52C38 54 24 64 30 74C36 82 50 70 56 56Z" opacity=".85"/>
+    <path d="M66 52C82 54 96 64 90 74C84 82 70 70 64 56Z" opacity=".85"/>
+    <path d="M22 22C30 26 40 34 50 46M98 22C90 26 80 34 70 46" fill="none" stroke-width="1" opacity=".6"/>
+  </g>
+  <!-- cuerpo -->
+  <ellipse cx="60" cy="66" rx="13" ry="22" fill="url(#o)" stroke="#8A5E1C" stroke-width="1.6"/>
+  <path d="M48 60Q60 65 72 60M47.5 69Q60 74 72.5 69M50 78Q60 82 70 78" fill="none" stroke="#5E0B17" stroke-width="4" stroke-linecap="round"/>
+  <path d="M60 88L60 94" stroke="#8A5E1C" stroke-width="2" stroke-linecap="round"/>
+  <!-- cabeza -->
+  <circle cx="60" cy="41" r="9" fill="url(#o)" stroke="#8A5E1C" stroke-width="1.6"/>
+  <path d="M56 33Q50 22 44 20M64 33Q70 22 76 20" fill="none" stroke="#8A5E1C" stroke-width="1.6" stroke-linecap="round"/>
+  <circle cx="44" cy="20" r="2.4" fill="#C9A25B"/><circle cx="76" cy="20" r="2.4" fill="#C9A25B"/>
+  <ellipse cx="56" cy="38" rx="2.6" ry="2" fill="#fff" opacity=".7"/>
+</svg>

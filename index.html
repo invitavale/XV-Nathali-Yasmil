@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es" class="intro-lock">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Nathali Yasmil · Mis XV Años</title>
+    <meta name="description" content="Martes 22 de diciembre · 6:00 p.m. · Salón Privilege. Estás cordialmente invitado a mi baile de XV años.">
+    <meta name="theme-color" content="#5A0A16">
+    <!-- Vista previa al compartir por WhatsApp / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://invitavale.com/XV-Nathali-Yasmil/">
+    <meta property="og:site_name" content="Invitavale">
+    <meta property="og:title" content="Nathali Yasmil · Mis XV Años 👑">
+    <meta property="og:description" content="Martes 22 de diciembre · 6:00 p.m. · Salón Privilege. Estás cordialmente invitado a mi baile de XV años.">
+    <meta property="og:image" content="https://invitavale.com/XV-Nathali-Yasmil/vista-previa.jpg">
+    <meta property="og:image:secure_url" content="https://invitavale.com/XV-Nathali-Yasmil/vista-previa.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Nathali Yasmil en sus XV años">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://invitavale.com/XV-Nathali-Yasmil/vista-previa.jpg">
+    <meta property="og:locale" content="es_DO">
+    <link rel="preload" as="image" href="sobre-fondo.webp">
+    <link rel="preload" as="image" href="foto0.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bridgerton.css?v=10">
+</head>
+<body>
+<div class="page-bg" aria-hidden="true"></div>
+<div class="scroll-oro" id="scrollOro" aria-hidden="true"></div>
+
+<!-- Intro: sobre que se abre; la carta sale y la pluma escribe el mensaje -->
+<div id="intro" class="intro" role="button" tabindex="0" aria-label="Toca el sello para abrir la invitación de Nathali Yasmil">
+    <div class="ie-stage">
+        <p class="ie-top">Los XV años de</p>
+        <p class="ie-para">Nathali Yasmil</p>
+        <div class="ie-dim" aria-hidden="true"></div>
+        <div class="ie-env" id="ieEnv">
+            <div class="ie-back"></div>
+            <div class="ie-pocket" id="iePocket">
+                <div class="ie-letter" id="ieLetter">
+                    <div class="ie-lines" id="ieLines">
+                        <p class="ie-l s"><span>Con la bendición de Dios</span></p>
+                        <p class="ie-l s"><span>y el amor de mis padres,</span></p>
+                        <p class="ie-l s"><span>a quienes agradezco</span></p>
+                        <p class="ie-l s"><span>haber hecho realidad este sueño,</span></p>
+                        <p class="ie-l s"><span>tengo el honor de invitarte</span></p>
+                        <p class="ie-l s"><span>a celebrar mis XV años</span></p>
+                        <p class="ie-l n"><span>Nathali Yasmil</span></p>
+                        <p class="ie-l d"><span>22 · Diciembre · 2026</span></p>
+                    </div>
+                    <button class="ie-entrar" id="ieEntrar" type="button">Entrar a la invitación</button>
+                </div>
+            </div>
+            <div class="ie-front"></div>
+            <div class="ie-flap"></div>
+            <div class="ie-seal" id="ieSeal" aria-hidden="true"></div>
+        </div>
+        <p class="ie-hint">Toca el sello para abrir</p>
+    </div>
+    <img class="ie-pluma" id="iePluma" src="elementos/pluma.svg" alt="" aria-hidden="true">
+</div>
+
+<audio id="bgMusic" src="musica.mp3" loop preload="auto"></audio>
+<div id="musicPlayer" class="music-player">
+    <button id="musicToggle" class="music-button" type="button" aria-label="Pausar o reproducir la música">
+        <svg id="volumeIcon" width="20" height="20" viewBox="0 0 24 24" fill="none"></svg>
+    </button>
+</div>
+
+<main class="invite">
+
+    <!-- 1. PORTADA -->
+    <section class="hero" data-butterflies="2" data-glitter="60">
+        <img class="hero-bg" src="foto0.jpg" alt="Nathali Yasmil en sus XV años">
+        <div class="hero-tint"></div>
+        <div class="hero-frame" aria-hidden="true"><i class="c c-bl"></i><i class="c c-br"></i></div>
+        <div class="hero-text">
+            <p class="kicker k"><span></span>Mis XV Años<span></span></p>
+            <h1 class="name">Nathali<span class="name2">Yasmil</span></h1>
+            <div class="dline"><span></span><b>22 · 12 · 2026</b><span></span></div>
+            <p class="frase">Ha llegado la temporada más esperada:<br>mi presentación en sociedad.</p>
+        </div>
+    </section>
+
+    <!-- 2. PASE DE INVITADO (se llena con el enlace: ?n=Familia%20Pérez&p=2) -->
+    <section class="pase pink bg-v" id="pase" data-glitter="40">
+        <div class="pass marco reveal">
+            <img class="pass-crown anim-shine" src="elementos/tiara.webp" alt="">
+            <div class="pass-main">
+                <p class="kicker">Invitación personal</p>
+                <p class="fam" id="guestName">Familia Pérez</p>
+                <div class="gl"></div>
+                <p class="msg">Será un honor contar con tu presencia en mi baile de XV años</p>
+            </div>
+            <div class="pass-stub" id="guestStub">
+                <img class="pass-key anim-key" src="elementos/llave.webp" alt="">
+                <span class="kicker">Admite</span>
+                <b id="guestSeats">2</b>
+                <span class="kicker" id="guestSeatsTxt">personas</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. LA GACETA DE SOCIEDAD (texto editable) -->
+    <section class="gaceta pink bg-p">
+        <div class="sobre reveal">
+        <div class="sobre-solapa" aria-hidden="true"></div>
+        <div class="sobre-back" aria-hidden="true"></div>
+        <article class="paper">
+            <header class="mast">
+                <p class="mast-top"><span>Edición especial</span><span>Santo Domingo · MMXXVI</span></p>
+                <h2 class="mast-title">Gaceta de Sociedad</h2>
+                <p class="mast-sub"><span></span>Crónicas de la temporada<span></span></p>
+            </header>
+            <img class="paper-cameo" src="elementos/camafeo.webp" alt="">
+            <p class="drop"><b>Querido y gentil lector:</b> esta temporada, todas las miradas de la alta sociedad se posan sobre una sola joven. La señorita <em>Nathali Yasmil</em> cumple quince primaveras y será presentada ante familiares y amigos en un baile que, según se rumora, no tendrá comparación.</p>
+            <p>Se esperan velas encendidas, vestidos de gala, un vals inolvidable y, por supuesto, tu distinguida presencia. Esta autora no se lo perdería por nada del mundo.</p>
+            <p class="firma">— Su cronista de sociedad <img src="elementos/dama.webp" alt=""></p>
+        </article>
+        <div class="sobre-front" aria-hidden="true"></div>
+        <img class="sello" src="elementos/sello.webp" alt="" aria-hidden="true">
+        </div>
+    </section>
+
+    <!-- 4. FECHA + CUENTA REGRESIVA -->
+    <section class="fecha pink bg-v" data-butterflies="3" data-glitter="90">
+        <p class="kicker reveal">Reserva la fecha</p>
+        <div class="fecha-candles reveal" data-speed="-0.06">
+            <div class="candle l"><img src="elementos/candelabro.webp" alt=""><i class="flama f1"></i><i class="flama f2"></i><i class="flama f3"></i></div>
+            <h2 class="title fecha-tit">Mi gran<br>noche</h2>
+            <div class="candle r"><img src="elementos/candelabro.webp" alt=""><i class="flama f1"></i><i class="flama f2"></i><i class="flama f3"></i></div>
+        </div>
+        <div class="baile reveal">
+            <span class="lazo" aria-hidden="true"></span>
+            <p class="b-dia">Martes</p>
+            <p class="b-fecha">22 de Diciembre</p>
+            <span class="b-linea" aria-hidden="true"></span>
+            <p class="b-hora">a las seis de la tarde</p>
+            <p class="b-anio">2026</p>
+        </div>
+        <div class="cal marco reveal">
+            <p class="m">Diciembre</p>
+            <div class="g">
+                <span class="h">L</span><span class="h">M</span><span class="h">M</span><span class="h">J</span><span class="h">V</span><span class="h">S</span><span class="h">D</span>
+                <span></span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span>
+                <span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span>
+                <span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span><span>20</span>
+                <span>21</span><span class="on">22</span><span>23</span><span>24</span><span>25</span><span>26</span><span>27</span>
+                <span>28</span><span>29</span><span>30</span><span>31</span>
+            </div>
+        </div>
+        <p class="faltan">Faltan</p>
+        <div class="cd reveal">
+            <div><b id="days">00</b><small>Días</small></div>
+            <div><b id="hours">00</b><small>Horas</small></div>
+            <div><b id="minutes">00</b><small>Min</small></div>
+            <div><b id="seconds">00</b><small>Seg</small></div>
+        </div>
+    </section>
+
+    <!-- 5. MI FIESTA DE XV -->
+    <section class="fiesta pink bg-p">
+        <p class="kicker reveal">El baile</p>
+        <h2 class="title reveal">Mi Fiesta de XV</h2>
+        <div class="marco fiesta-card reveal">
+        <div class="lugar">
+            <p class="aqui"><svg width="12" height="16" viewBox="0 0 34 44"><path d="M17 0C7.6 0 0 7.4 0 16.6 0 29 17 44 17 44s17-15 17-27.4C34 7.4 26.4 0 17 0z" fill="#8E1B2C"/><circle cx="17" cy="16" r="7" fill="#F6E3B4"/></svg>¡Aquí será la fiesta!</p>
+            <img class="lugar-foto" id="lugarImg" src="lugar-acuarela.webp" alt="Acuarela del Salón Privilege">
+            <p class="vn">Salón Privilege</p>
+            <p class="va">San Vicente de Paúl #111</p>
+        </div>
+        <div class="fcard">
+            <div class="fdate">
+                <div><small>Martes</small><b>22</b><small>Diciembre</small></div>
+                <span class="vl"></span>
+                <div><small>Hora</small><b class="hr">6:00</b><small>p.m.</small></div>
+            </div>
+        </div>
+        <div class="llegar"><a class="btn btn-rose" data-link="mapa" href="#" target="_blank" rel="noopener">¿Cómo llegar?</a></div>
+        </div>
+    </section>
+
+    <!-- 6. ITINERARIO (editar horas y textos aquí) -->
+    <section class="itin pink bg-v" data-butterflies="3" data-glitter="90">
+        <p class="kicker reveal">Programa de la velada</p>
+        <h2 class="title reveal" style="margin-top:4px">Itinerario</h2>
+        <p class="sub reveal">Así viviremos juntos esta noche de gala.</p>
+        <div class="marco itin-card reveal">
+        <div class="tl" id="timeline">
+            <span class="tl-fill" aria-hidden="true"></span>
+            <div class="ti reveal from-l"><div class="ic"><img class="anim-iglesia" src="iconos/iglesia.webp" alt=""></div><span class="dot"></span><div class="tx l"><b>5:00 PM</b><span>Misa de acción de gracias</span><small>Agradeciendo a Dios por mis 15 años</small></div></div>
+            <div class="ti reveal from-r"><div class="tx r"><b>7:00 PM</b><span>Mi presentación</span><small>El momento más esperado</small></div><span class="dot"></span><div class="ic"><img class="anim-tiara big" src="elementos/tiara.webp" alt=""></div></div>
+            <div class="ti reveal from-l"><div class="ic"><img class="anim-nota big" src="elementos/gramofono.webp" alt=""></div><span class="dot"></span><div class="tx l"><b>7:30 PM</b><span>Vals</span><small>Bailando con papá</small></div></div>
+            <div class="ti reveal from-r"><div class="tx r"><b>8:00 PM</b><span>Brindis</span><small>Por mis quince primaveras</small></div><span class="dot"></span><div class="ic"><img class="anim-brindis" src="iconos/brindis.webp" alt=""></div></div>
+            <div class="ti reveal from-l"><div class="ic"><img class="anim-cena" src="iconos/cena.webp" alt=""></div><span class="dot"></span><div class="tx l"><b>8:30 PM</b><span>Banquete</span><small>Compartir y celebrar</small></div></div>
+            <div class="ti reveal from-r"><div class="tx r"><b>10:00 PM</b><span>¡Hora loca!</span><small>Música, baile y diversión</small></div><span class="dot"></span><div class="ic"><img class="anim-disco" src="iconos/disco.webp" alt=""></div></div>
+        </div>
+        </div>
+    </section>
+
+    <!-- 7. GALERÍA: retratos en marco dorado (desliza o usa las flechas) -->
+    <section class="gal pink bg-p">
+        <img class="deco-binoculares anim-float" src="elementos/binoculares.webp" alt="" aria-hidden="true">
+        <img class="deco-espejo anim-sway" src="elementos/espejo.webp" alt="" aria-hidden="true">
+        <p class="kicker reveal">Galería</p>
+        <h2 class="title reveal">Retratos de mis 15 años</h2>
+        <p class="sub reveal">Toda la sociedad tiene los ojos puestos en esta historia</p>
+        <div class="stack" id="stack">
+            <figure class="pola"><img src="foto1.jpg" alt="Foto 1 de los XV años de Nathali Yasmil"></figure>
+            <figure class="pola"><img src="foto2.jpg" alt="Foto 2 de los XV años de Nathali Yasmil" style="object-position:22% 40%"></figure>
+            <figure class="pola"><img src="foto3.jpg" alt="Foto 3 de los XV años de Nathali Yasmil"></figure>
+            <figure class="pola"><img src="foto4.jpg" alt="Foto 4 de los XV años de Nathali Yasmil"></figure>
+            <figure class="pola"><img src="foto5.jpg" alt="Foto 5 de los XV años de Nathali Yasmil"></figure>
+            <button class="arr prev" id="prevBtn" type="button" aria-label="Foto anterior">‹</button>
+            <button class="arr next" id="nextBtn" type="button" aria-label="Foto siguiente">›</button>
+        </div>
+        <div class="dots" id="dots"></div>
+    </section>
+
+    <!-- 8. DETALLES: código de vestimenta + comparte tus fotos -->
+    <section class="det pink bg-v" data-glitter="50">
+        <div class="det-top reveal pop" data-speed="-0.08"><img class="abanico anim-fan" src="elementos/abanico.webp" alt=""></div>
+        <p class="kicker reveal">Para tener en cuenta</p>
+        <h2 class="title reveal">Detalles</h2>
+
+        <div class="dcard marco reveal">
+            <div class="stx">
+                <p class="kicker">Dress code</p>
+                <h4>Código de<br>vestimenta</h4>
+                <p class="fm">Elegante</p>
+                <button class="btn btn-rose" type="button" onclick="openModal('dresscodeModal')">Ver más</button>
+            </div>
+            <div class="dill libre"><img class="anim-sway" src="elementos/vestimenta-regencia.webp" alt="Vestido largo y traje de gala"></div>
+        </div>
+
+        </div>
+
+        <div class="dcard marco reveal">
+            <div class="dill libre"><img class="anim-float" src="elementos/fotos-camara.webp" alt="Cámara y fotos"></div>
+            <div class="stx">
+                <p class="kicker">Álbum compartido</p>
+                <h4>Comparte<br>tus fotos</h4>
+                <p>Sube los momentos que captures durante el baile.</p>
+                <a class="btn btn-rose" data-link="fotos" href="#" target="_blank" rel="noopener">Subir fotos</a>
+            </div>
+        </div>
+
+        <div class="dcard marco ninos reveal">
+            <div class="dill libre"><img src="elementos/no-ninos.webp" alt="No se permiten niños"></div>
+            <div class="stx">
+                <p class="kicker">Una noche entre jóvenes</p>
+                <h4>No se permiten niños</h4>
+                <p>Esta fiesta está pensada para mis amigos y jóvenes de mi edad. Para que todos puedan bailar y disfrutar con libertad, te pido con cariño que no asistan niños pequeños.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- 9. REGALOS -->
+    <section class="gift pink bg-p" data-butterflies="2">
+        <p class="kicker reveal">Mesa de regalos</p>
+        <h2 class="title reveal" style="margin-top:4px">Regalos</h2>
+        <div class="marco gift-card reveal">
+        <p class="sub" style="font-size:15.5px">Tu presencia es mi mejor regalo. Si deseas tener un detalle conmigo, aquí te dejo algunas opciones.</p>
+        <div class="gift-row">
+            <div class="medal"><img class="anim-float" src="icono-regalo.png" alt="Regalo"></div>
+        </div>
+        <a class="btn btn-rose" data-link="regalos" href="regalos.html">Ver sugerencias de regalo</a>
+        </div>
+    </section>
+
+    <!-- 10. CONFIRMA TU ASISTENCIA -->
+    <section class="rsvp pink bg-v" data-glitter="50">
+        <p class="kicker reveal">R.S.V.P.</p>
+        <h2 class="title reveal">Confirma tu<br>asistencia</h2>
+        <div class="marco rsvp-card reveal">
+        <p class="sub">Tu lugar en el salón ya te está esperando.</p>
+        <div class="sala">
+            <img class="sofa" src="elementos/sofa.webp" alt="">
+            <div class="env"><div class="b"></div><div class="carta">¡Ahí estaré!</div><div class="f"></div><div class="s">XV</div></div>
+        </div>
+        <p class="limit">Antes del 1 de diciembre</p>
+        <a class="btn btn-rose" data-link="confirmar" href="#" target="_blank" rel="noopener">Confirmar asistencia</a>
+        </div>
+    </section>
+
+    <!-- 11. PIE -->
+    <footer class="foot pink bg-p" data-butterflies="2">
+        <img class="crown reveal pop anim-shine" data-speed="-0.05" src="elementos/tiara.webp" alt="">
+        <p class="verse reveal">«Gracias por ser parte<br>de mi temporada más especial.»</p>
+        <p class="con">Con cariño,</p>
+        <p class="nm">Nathali Yasmil</p>
+        <div class="gl" style="width:180px;margin:8px auto 0"></div>
+        <p class="kicker" style="margin-top:12px">22 · Diciembre · 2026</p>
+        <div class="foot-deco" aria-hidden="true">
+            <img class="sombrilla anim-sway" src="elementos/sombrilla.webp" alt="">
+        </div>
+        <a class="credit" href="https://invitavale.com" target="_blank" rel="noopener">invitavale.com</a>
+    </footer>
+</main>
+
+<!-- Modal: código de vestimenta -->
+<div id="dresscodeModal" class="modal-overlay" onclick="closeModal(event,'dresscodeModal')">
+    <div class="modal-card marco" onclick="event.stopPropagation()">
+        <button class="modal-close" type="button" onclick="closeModal(null,'dresscodeModal')" aria-label="Cerrar">&times;</button>
+        <h3>Código de vestimenta</h3>
+        <p class="fm">Elegante</p>
+        <img src="elementos/vestimenta-regencia.webp" alt="Vestido largo y traje de gala">
+        <p class="dc-sub">Vestidos y trajes</p>
+        <p>El color rojo está reservado para la quinceañera. Con cariño, te pido no usarlo.</p>
+        <div class="mcols">
+            <div><i style="background:#9E1B2E"></i>Rojo</div>
+        </div>
+    </div>
+</div>
+
+<div id="toast" class="toast" role="status"></div>
+
+<script src="bridgerton.js?v=10" defer></script>
+</body>
+</html>

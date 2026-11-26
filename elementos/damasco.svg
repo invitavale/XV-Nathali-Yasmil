@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 160" width="120" height="160">
+  <g fill="#E8C987">
+    <g id="m">
+      <!-- motivo damasco central -->
+      <path d="M60 24C66 36 78 40 78 56C78 68 68 74 60 88C52 74 42 68 42 56C42 40 54 36 60 24Z" opacity=".9"/>
+      <path d="M60 40C63 48 70 52 70 58C70 64 64 68 60 74C56 68 50 64 50 58C50 52 57 48 60 40Z" fill="#000" fill-opacity=".0"/>
+      <path d="M42 56C30 52 24 60 28 68C32 74 40 70 38 64" fill="none" stroke="#E8C987" stroke-width="2.2"/>
+      <path d="M78 56C90 52 96 60 92 68C88 74 80 70 82 64" fill="none" stroke="#E8C987" stroke-width="2.2"/>
+      <path d="M60 88C58 96 54 100 48 102M60 88C62 96 66 100 72 102" fill="none" stroke="#E8C987" stroke-width="2"/>
+      <circle cx="60" cy="18" r="3"/>
+      <circle cx="46" cy="104" r="2.4"/><circle cx="74" cy="104" r="2.4"/>
+    </g>
+    <!-- medios motivos en las esquinas para que el patrón encaje -->
+    <use href="#m" transform="translate(-60 80)"/>
+    <use href="#m" transform="translate(60 80)"/>
+    <use href="#m" transform="translate(-60 -80)"/>
+    <use href="#m" transform="translate(60 -80)"/>
+  </g>
+</svg>
