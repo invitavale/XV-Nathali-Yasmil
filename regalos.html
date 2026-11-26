@@ -37,8 +37,7 @@ button{font:inherit;border:0;background:none;cursor:pointer;color:inherit}
 .volver{position:absolute;left:14px;top:14px;display:inline-flex;align-items:center;gap:6px;font-family:var(--caps);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--oro-claro);text-decoration:none;padding:10px 8px;min-height:44px}
 .kicker{font-family:var(--caps);font-size:11px;letter-spacing:.4em;text-transform:uppercase}
 .cab .kicker{margin-top:30px}
-.cab h1{font-family:var(--script);font-weight:400;font-size:clamp(42px,12vw,54px);line-height:1.05;margin-top:6px;
-  background:linear-gradient(180deg,#FFF4D6 10%,#EBCB86 50%,#C9984A 85%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 2px 6px rgba(0,0,0,.45))}
+.cab h1{font-family:var(--script);font-weight:400;font-size:clamp(42px,12vw,54px);line-height:1.05;margin-top:6px;color:#F1D394;text-shadow:0 2px 8px rgba(0,0,0,.5)}
 .adorno{width:170px;height:22px;margin:4px auto 0;background:url('elementos/adorno.svg') center/contain no-repeat}
 .cab .para{font-family:var(--script);font-size:30px;color:#F7E6DA;margin-top:6px}
 .nota{margin:18px auto 0;max-width:340px;font-style:italic;font-size:17px;line-height:1.45;color:#F7E6DA}
@@ -71,6 +70,8 @@ button{font:inherit;border:0;background:none;cursor:pointer;color:inherit}
 .chips{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;margin-top:9px;list-style:none}
 .chips li{font-size:15.5px;line-height:1.2;padding:6px 12px;border-radius:999px;background:#FFFCF5;border:1px solid rgba(201,162,91,.75);color:var(--tinta)}
 .chips li b{font-weight:600;color:var(--carmesi)}
+.talla{margin:14px auto 0;width:max-content;font-family:var(--caps);font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--oro-claro);background:linear-gradient(180deg,#B8323F,#7A1426);padding:9px 20px;border-radius:999px;box-shadow:0 0 0 1px #D4AF6A,0 6px 12px rgba(62,10,20,.25)}
+.talla b{font-size:18px;letter-spacing:.06em;margin-left:4px}
 .tip{margin-top:14px;text-align:center;font-style:italic;font-size:14.5px;color:var(--oro-osc);border-top:1px solid rgba(201,162,91,.5);padding-top:10px}
 
 .pie{text-align:center;color:#F7E6DA;padding:6px 24px 40px}
@@ -166,7 +167,7 @@ const CATS = [
       ['Tenis',['Nike Dunk Low (panda, verde, gris, vino, azul)','Nike Air Force 1','Adidas Samba','Adidas Campus 00s','Adidas Gazelle','New Balance 530','Nike M2K Tekno','Vans Old Skool']],
       ['Tacones',['Tacones negros de charol','Slingbacks','Tacones color vino','Tacones nude o crema','Tacones marrón']],
       ['Botas',['Botas altas','Botas Chelsea de plataforma','Botines de tacón','Botas vaqueras']]
-    ], tip:'Para la talla, consulta con la familia.' }
+    ], talla:'38' }
 ];
 
 const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -187,6 +188,7 @@ lista.innerHTML = CATS.map((c, i) => `
         <div class="grupo"><h3>${esc(t)}</h3>
           <ul class="chips">${items.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
         </div>`).join('')}
+      ${c.talla ? `<p class="talla">Talla <b>${esc(c.talla)}</b></p>` : ''}
       ${c.tip ? `<p class="tip">${esc(c.tip)}</p>` : ''}
     </div>
   </section>`).join('');

@@ -914,3 +914,32 @@ main>section,main>footer{position:relative;z-index:1}
 .title.reveal{letter-spacing:.25em}
 /* nombre del pie en color sólido (en iPhone el degradado recortado puede desaparecer) */
 .foot .nm,.foot.bg-p .nm{background:none;-webkit-background-clip:border-box;background-clip:border-box;color:var(--carmesi);-webkit-text-fill-color:var(--carmesi);opacity:1;filter:none;text-shadow:0 1px 0 rgba(255,255,255,.6)}
+
+/* =========================================================
+   v11 · títulos siempre visibles en iPhone: sin texto recortado
+   con degradado (Safari a veces lo deja invisible con animaciones)
+   ========================================================= */
+.title,.pink .title,.pink>.title,.pink.bg-p>.title,.hero .name,.fecha .day,.fh b,.ie-para,.foot .nm{
+  background:none!important;-webkit-background-clip:border-box!important;background-clip:border-box!important;filter:none!important}
+.pink.bg-v>.title,.pink.bg-v .title{color:#F1D394;-webkit-text-fill-color:#F1D394;text-shadow:0 2px 8px rgba(0,0,0,.55)}
+.pink.bg-p>.title,.pink.bg-p .title{color:var(--carmesi);-webkit-text-fill-color:var(--carmesi);text-shadow:0 1px 0 rgba(255,255,255,.6)}
+.marco .title{color:var(--tinta);-webkit-text-fill-color:var(--tinta);text-shadow:none}
+.hero .name{color:#F4DDA0;-webkit-text-fill-color:#F4DDA0;text-shadow:0 3px 14px rgba(0,0,0,.7),0 1px 2px rgba(0,0,0,.5)}
+.fecha .day,.fh b{color:var(--rojo);-webkit-text-fill-color:var(--rojo)}
+.ie-para{color:var(--carmesi);-webkit-text-fill-color:var(--carmesi)}
+/* los títulos entran sin desenfoque */
+.title.reveal{filter:none!important;letter-spacing:.08em}
+.title.reveal.is-visible{letter-spacing:normal}
+/* portada: nombre y texto más arriba */
+.hero-text{bottom:calc(110px + env(safe-area-inset-bottom,0px))}
+@media (max-height:700px){.hero-text{bottom:calc(70px + env(safe-area-inset-bottom,0px))}}
+/* velo suave detrás del texto de portada para que se lea sobre el vestido */
+.hero-text::before{content:"";position:absolute;left:-10%;right:-10%;top:-22%;bottom:-26%;z-index:-1;pointer-events:none;
+  background:radial-gradient(60% 55% at 50% 50%,rgba(30,4,8,.55),rgba(30,4,8,.28) 55%,transparent 80%)}
+.hero .k,.hero .dline,.hero .frase{color:#FFF1D6}
+/* v12 · asistencia confirmada, sin botón */
+.rsvp-card{padding-top:26px;padding-bottom:22px}
+.rsvp-card .sala{margin-top:30px}
+.rsvp-msg{font-style:italic;font-size:18px;line-height:1.45;color:var(--tinta)!important;margin:14px 10px 0;text-align:center}
+.rsvp-linea{display:block;width:140px;height:18px;margin:10px auto 2px;background:url('elementos/adorno.svg') center/contain no-repeat}
+.rsvp-cierre{font-family:var(--script);font-size:32px;line-height:1.1;color:var(--carmesi)!important;text-align:center}
